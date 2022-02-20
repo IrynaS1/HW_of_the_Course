@@ -1,0 +1,94 @@
+ 4. Создать внешний репозиторий c названием JSON. === 
+
+ https://github.com/IrynaS1
+ Repositories 
+ New 
+ Create a new repository "JSON" 
+
+ 5. Клонировать репозиторий JSON на локальный компьютер. === git clone  https://github.com/IrynaS1/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”. === 
+
+ cd JSON/
+ touch new.json
+
+ 7. Добавить файл под гит. === git add new.json 
+ 8. Закоммитить файл. === git commit -m "1 file"
+ 9. Отправить файл на внешний GitHub репозиторий. === git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON. === 
+
+ vim new.json
+ i
+ {
+                "name": "Селюк Ирина Григорьевна",
+                "age": 36,
+                "pats": "1 cat",
+                "futureSalary": "1000 $"
+}
+
+Esc
+:wq
+
+ 11. Отправить изменения на внешний репозиторий. === 
+
+ git commit -am "modified new.json"
+ git push
+ 
+ 12. Создать файл preferences.json === touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON. ===
+
+  vim preferences.json
+  i
+{
+        "lastMovie": "Free Guy",
+        "favoriteTvSeries": "Poirot",
+        "favoriteFood": "Fast Food",
+        "favoriteTimeOfTheYear": "Summer",
+        "countryIWantToVisit": "New Zeland"
+}
+Esc
+:wq
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON === 
+
+ touch skills.json
+ vim skills.json
+ i
+ {
+        "skills": ["Базовая теория", "клиент серверная архитектура", "структуры запросов на сервер и ответов", "JSON", "XML", "тестирование API", "снятие и чтение логов", "Postman", "Fidler", "Dev Tools", "мобильное тестирование", "сниффинг через Charles", "командная строка (terminal)", "простой bash скриптринг", "автоматизация рутинных задач на сервере", "основы SQL", "Git", "Jmeter", "методология разработки Scrum"]
+}
+Esc
+:wq
+
+ 15. Отправить сразу 2 файла на внешний репозиторий. === 
+
+ git add .
+ git commit -m "+2 files"
+ git push
+
+ 16. На веб интерфейсе создать файл bug_report.json. ===
+
+ https://github.com/IrynaS1/JSON
+ Add file
+ Create new file
+ bug_report.json named
+ 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === Commit new file
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON. ====
+
+bug_report.json
+click pen
+
+ {
+"id": 1,
+"summary": "Не отображается меню в футере страницы",
+"steps_to_reproduce": [
+"1. Зайти на главную страницу сайта",
+"2. Прокрутить бегунком вниз страницы"
+],
+"expected_result": "В футере страницы отображается дополнительное меню",
+"actual_result": "В футере страницы не отображается дополнительное меню",
+"priority": "Medium"
+}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе. ==== Commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON === git pull

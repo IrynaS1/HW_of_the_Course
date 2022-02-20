@@ -1,0 +1,93 @@
+21. Создать внешний репозиторий c названием XML. ===
+
+ https://github.com/IrynaS1
+ Repositories 
+ New 
+ Create a new repository "XML"
+
+ 22. Клонировать репозиторий XML на локальный компьютер. === git clone https://github.com/IrynaS1/XML.git
+ 23. Внутри локального XML создать файл “new.xml”. ====
+
+  cd XML
+  touch new.xml
+
+ 24. Добавить файл под гит. === git add new.xml
+ 25. Закоммитить файл. ==== git commit -m "create 1 file"
+ 26. Отправить файл на внешний GitHub репозиторий. === git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+ vim new.xml
+ i
+
+ <?xml version="1.0"?>
+ <information_about_me>
+ <name>Селюк Ирина Григорьевна</name>
+ <age>36</age>
+ <pats>1 кошка</pats>
+ <futureSalary>1000$</futureSalary>
+ </information_about_me>
+
+ Esc
+ :wq
+
+ 28. Отправить изменения на внешний репозиторий. ===
+
+ git commit -am "1 file"
+ git push
+
+ 29. Создать файл preferences.xml === touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML. ===
+
+ vim preferences.xml
+ i
+
+ <?xml version="1.0"?>
+<information_about_me>
+<lastMovie>Главный герой</lastMovie>
+<favoriteTVseries>Poirot</favoriteTVseries>
+<favoriteFood>Fast Food</favoriteFood>
+<favoriteTimeOfTheYear>Summer</favoriteTimeOfTheYear>
+<countryIWouldLikeToVisit>New Zeland</countryIWouldLikeToVisit>
+</information_about_me>
+Esc
+:wq
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML====
+
+ vim skills.xml
+ i
+ <?xml version="1.0"?>
+<sKills>
+        Базовая теория, клиент серверная архитектура, структуры запросов на серверб и ответов, JSON, XML, тестирование API, снятие и чтение логов, Postman, Fidler, Dev Tools, мобильное тестирование, сниффинг через Charles, командная строка (terminal), простой bash скриптринг , автоматизация рутинных задач на сервере, основы SQL, Git, Jmeter, методология разработки Scrum.
+</skills>
+Esc
+:wq
+
+ 32. Сделать коммит в одну строку. ===
+ 
+ git add .; git commit -m "Modified file skills.xml and added to GitHub repository ++++++++"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий. ====git push
+ 34. На веб интерфейсе создать файл bug_report.xml. ===
+
+ https://github.com/IrynaS1/XML
+ Add file
+ Create new file
+ bug_report.xml named
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === Commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML. ===
+
+bug_report.xml 
+карандаш
+ <?xml version="1.0"?>
+<bug_report>
+  <ID>2</ID>
+  <summary>Не отображается логотип</summary>
+  <stepsToReproduce> 1. Зайти на сайт. 2. Найти логотип на странице </stepsToReproduce>
+  <expectedResult>На странице отображается логотип</expectedResult>
+  <actualResult>На странице не отображается логотип</actualResult>
+</bug_report>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === Commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML === git pull
